@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+        }
+
+        #countdown {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150px;
+            text-align: center;
+        }
+
+        #message {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="countdown"></div>
+    <div id="message">Happy Birthday! May All Your Wishes Come True!</div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
